@@ -17,7 +17,7 @@ class ScriptaConan(ConanFile):
     name = "scripta"
     license = ""
     author = "UltiMaker"
-    channel = "ultimaker"
+    user = "ultimaker"
     url = "https://github.com/Ultimaker/Scripta"
     description = "A visual debugger for CuraEngine called after the moth species Habrosyne scripta"
     topics = ("cura", "c++", "curaengine", "vtu", "gcode-generation", "3d-printing")
