@@ -50,7 +50,6 @@ class ScriptaConan(ConanFile):
 
     def export_sources(self):
         copy(self, "CMakeLists.txt", self.recipe_folder, self.export_sources_folder)
-        copy(self, "*", path.join(self.recipe_folder, "src"), path.join(self.export_sources_folder, "src"))
         copy(self, "*", path.join(self.recipe_folder, "include"), path.join(self.export_sources_folder, "include"))
 
     def layout(self):

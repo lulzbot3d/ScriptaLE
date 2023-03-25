@@ -3,8 +3,7 @@ project(scripta CXX)
 
 set(HDR
         include/scripta/logger.h
-        include/scripta/section_type.h
-        include/scripta/visual_data_info.h
+        include/scripta/vdi.h
         )
 
 add_library(scripta INTERFACE ${HDR})
