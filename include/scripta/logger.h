@@ -2,6 +2,7 @@
 #define SCRIPTA_LOGGER_H
 
 #include <unordered_map>
+#include <memory>
 
 #include "scripta/vdi.h"
 
