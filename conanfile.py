@@ -41,9 +41,9 @@ class ScriptaConan(ConanFile):
     @property
     def _compilers_minimum_version(self):
         return {
-            "gcc": "12",
+            "gcc": "10",
             "clang": "7",
-            "apple-clang": "14",
+            "apple-clang": "13",
             "msvc": "192",
             "visual_studio": "17"
         }
