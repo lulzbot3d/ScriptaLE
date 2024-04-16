@@ -17,7 +17,7 @@ class ScriptaConan(ConanFile):
     name = "scripta"
     license = ""
     author = "UltiMaker"
-    user = "ultimaker"
+    user = "lulzbot"
     url = "https://github.com/Ultimaker/Scripta"
     description = "A visual debugger for CuraEngine called after the moth species Habrosyne scripta"
     topics = ("cura", "c++", "curaengine", "vtu", "gcode-generation", "3d-printing")
@@ -70,7 +70,7 @@ class ScriptaConan(ConanFile):
                 )
 
     def build_requirements(self):
-        self.test_requires("standardprojectsettings/[>=0.1.0]@ultimaker/stable")
+        self.test_requires("standardprojectsettings/[>=0.1.0]@lulzbot/stable")
 
     def generate(self):
         tc = CMakeToolchain(self)
