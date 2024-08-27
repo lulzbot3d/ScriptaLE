@@ -1,3 +1,8 @@
+# Copyright (c) 2024 UltiMaker
+# Scripta is released under the AGPLv3 or higher
+# Copyright (c) 2024 FAME3D LLC.
+# ScriptaLE is released under the AGPLv3 or higher
+
 import os
 from os import path
 
@@ -13,15 +18,15 @@ from conan.tools.scm import Version
 required_conan_version = ">=1.55.0"
 
 
-class ScriptaConan(ConanFile):
-    name = "scripta"
-    license = ""
-    author = "UltiMaker"
+class ScriptaLEConan(ConanFile):
+    name = "scriptale"
+    license = "AGPLv3"
+    author = "UltiMaker, FAME3D LLC."
     user = "lulzbot"
-    url = "https://github.com/Ultimaker/Scripta"
-    description = "A visual debugger for CuraEngine called after the moth species Habrosyne scripta"
+    url = "https://github.com/lulzbot3d/ScriptaLE"
+    description = "A visual debugger for CuraEngineLE called after the moth species Habrosyne scripta"
     topics = ("cura", "c++", "curaengine", "vtu", "gcode-generation", "3d-printing")
-    exports = "LICENSE*"
+    exports = "LICENSE"
     settings = "os", "compiler", "build_type", "arch"
     no_copy_source = True
 
@@ -101,4 +106,4 @@ class ScriptaConan(ConanFile):
     def package_info(self):
         self.cpp_info.bindirs = []
         self.cpp_info.libdirs = []
-        self.conf_info.define("user.scripta:visual_debug", False)
+        self.conf_info.define("user.scriptale:visual_debug", False)

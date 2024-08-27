@@ -1,3 +1,6 @@
+// Copyright (c) 2024 UltiMaker
+// Scripta is released under the AGPLv3 or higher
+
 #ifndef SCRIPTA_LOGGER_H
 #define SCRIPTA_LOGGER_H
 
