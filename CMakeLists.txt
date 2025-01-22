@@ -1,7 +1,7 @@
 # Copyright (c) 2024 UltiMaker
 # Scripta is released under the AGPLv3 or higher
 cmake_minimum_required(VERSION 3.23)
-project(scriptale CXX)
+project(scripta CXX)
 
 set(HDR
         include/scripta/logger.h
